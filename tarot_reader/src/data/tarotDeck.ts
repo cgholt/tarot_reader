@@ -1,0 +1,38 @@
+export const TAROT_DECK = [
+  {
+    name: "The Fool",
+    suit: "Major Arcana",
+    upright: "Beginnings, innocence, spontaneity, a free spirit",
+    reversed: "Holding back, recklessness, risk-taking",
+    image: "fool.jpg",
+  },
+  {
+    name: "The Magician",
+    suit: "Major Arcana",
+    upright: "Manifestation, resourcefulness, power, inspired action",
+    reversed: "Manipulation, poor planning, untapped talents",
+    image: "magician.jpg",
+  },
+  {
+    name: "The High Priestess",
+    suit: "Major Arcana",
+    upright:
+      "Intuition, sacred knowledge, divine feminine, the subconscious mind",
+    reversed: "Secrets, disconnected from intuition, withdrawal and silence",
+    image: "high_priestess.jpg",
+  },
+  {
+    name: "Ace of Cups",
+    suit: "Cups",
+    upright: "Love, new relationships, compassion, creativity",
+    reversed: "Self-love, intuition, repressed emotions",
+    image: "ace_of_cups.jpg",
+  },
+  {
+    name: "Ten of Swords",
+    suit: "Swords",
+    upright: "Painful endings, deep wounds, betrayal, loss, crisis",
+    reversed: "Recovery, regeneration, resisting an inevitable end",
+    image: "ten_of_swords.jpg",
+  },
+];

@@ -14,3 +14,10 @@ export type CardInHand = {
   image: string;
   position: string;
 };
+
+export type Star = [number, number];
+export type Line = [number, number];
+export type Constellation = {
+  stars: Star[];
+  lines: Line[];
+};

@@ -21,7 +21,7 @@ export default function FivePage() {
     <>
       <Link
         href="/"
-        className="m-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-2xl transition"
+        className="m-4 bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
       >
         Home
       </Link>
@@ -30,7 +30,7 @@ export default function FivePage() {
           <input type="hidden" value={5} name="count" />
           <button
             type="submit"
-            className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
+            className="bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
           >
             Draw Cards
           </button>

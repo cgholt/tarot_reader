@@ -12,22 +12,22 @@ export default function HomePage() {
         Ask your question, draw the cards, and let the wisdom of the arcana
         unfold — guided by an AI oracle.
       </p>
-      <div>
+      <div className="flex gap-4 flex-row">
         <Link
           href="/one"
-          className="m-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-2xl transition"
+          className="bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
         >
           One Card
         </Link>
         <Link
           href="/three"
-          className="m-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-2xl transition"
+          className="bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
         >
           Three Cards
         </Link>
         <Link
           href="/five"
-          className="m-1 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-2xl transition"
+          className="bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
         >
           Five Cards
         </Link>

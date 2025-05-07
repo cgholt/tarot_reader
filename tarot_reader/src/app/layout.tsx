@@ -1,5 +1,6 @@
 // src/app/layout.tsx
 
+import StaryBackground from "@/components/StarryBackground";
 import "../global.css";
 import { ReactNode } from "react";
 
@@ -11,7 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-br from-purple-900 to-black text-white min-h-screen">
+      <body>
+        <StaryBackground />
         <main className="max-w-4xl mx-auto p-6">{children}</main>
       </body>
     </html>

@@ -3,7 +3,10 @@
 import { CardInHand, TarotCard } from "@/app/interface";
 import { TAROT_DECK } from "@/data/tarotDeck";
 
-export async function drawCards(count: number = 3) {
+export async function drawCards(prevState: any, formData: any) {
+  // Get count
+  const count = formData.get("count");
+
   function shuffleDeck(array: TarotCard[]) {
     for (var i = array.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -11,7 +14,7 @@ export async function drawCards(count: number = 3) {
       array[i] = array[j];
       array[j] = temp;
     }
-    console.log(array);
+    // console.log(array);
     return array;
   }
 
@@ -23,6 +26,6 @@ export async function drawCards(count: number = 3) {
       ...card,
       position: Math.random() < 0.5 ? "upright" : "reversed",
     }));
-
+  console.log(drawnHand);
   return drawnHand;
 }

@@ -6,12 +6,16 @@ interface PentagonCardDisplayProps {
   size?: number; // Width/height of the card in px
   radius?: number; // Radius of the pentagon in px
   backs?: boolean;
+  width?: number;
+  height?: number;
 }
 
 export default function PentagonCardDisplay({
   cardImages,
   size = 100,
   radius = 175,
+  width = 200,
+  height = 345,
 }: PentagonCardDisplayProps) {
   console.log(cardImages);
   if (cardImages.length !== 5) {
@@ -39,8 +43,8 @@ export default function PentagonCardDisplay({
             key={i}
             src={`/images/${image}`}
             alt={`Card ${i + 1}`}
-            width={size}
-            height={size}
+            width={width}
+            height={height}
             className="absolute"
             style={{ left: `${x}px`, top: `${y}px` }}
           />

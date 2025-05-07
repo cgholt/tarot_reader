@@ -36,7 +36,12 @@ export default function FivePage() {
           </button>
         </form>
         <h1 className="text-3xl font-bold">Your Tarot Reading</h1>
-        <PentagonCardDisplay cardImages={cardImages} />
+        <PentagonCardDisplay
+          cardImages={cardImages}
+          radius={275}
+          width={200 * 0.9}
+          height={345 * 0.9}
+        />
       </section>
     </>
   );

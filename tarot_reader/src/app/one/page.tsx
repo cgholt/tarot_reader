@@ -1,15 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useActionState } from "react";
 import { drawCards } from "@/lib/actions";
 import { TarotCard } from "../interface";
 import Image from "next/image";
-import { useFormState } from "react-dom";
 import Link from "next/link";
 
 export default function OnePage() {
   const initialState: any[] = [];
-  const [state, formAction] = useFormState(drawCards, initialState);
+  const [state, formAction] = useActionState(drawCards, initialState);
 
   const cardsDisplay =
     state.length > 0 ? (
@@ -39,7 +38,7 @@ export default function OnePage() {
     <>
       <Link
         href="/"
-        className="m-4 bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
+        className="m-4 bg-transparent border border-white hover:bg-[#f7eacc] text-white hover:text-[#3e6950] font-semibold py-2 px-4 rounded-xl transition duration-200"
       >
         Home
       </Link>
@@ -48,7 +47,7 @@ export default function OnePage() {
           <input type="hidden" value={1} name="count" />
           <button
             type="submit"
-            className="bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
+            className="bg-transparent border border-white hover:bg-[#f7eacc] text-white hover:text-[#3e6950] font-semibold py-2 px-4 rounded-xl transition duration-200"
           >
             Draw Cards
           </button>

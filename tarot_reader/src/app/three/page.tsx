@@ -2,12 +2,12 @@
 import { drawCards } from "@/lib/actions";
 import { TarotCard } from "../interface";
 import Image from "next/image";
-import { useFormState } from "react-dom";
 import Link from "next/link";
+import { useActionState } from "react";
 
 export default function ThreePage() {
   const initialState: any[] = [];
-  const [state, formAction] = useFormState(drawCards, initialState);
+  const [state, formAction] = useActionState(drawCards, initialState);
 
   const cardsDisplay =
     state.length > 0 ? (
@@ -47,7 +47,7 @@ export default function ThreePage() {
     <>
       <Link
         href="/"
-        className="m-4 bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
+        className="m-4 bg-transparent border border-white hover:bg-[#f7eacc] hover:text-[#3e6950] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
       >
         Home
       </Link>
@@ -56,7 +56,7 @@ export default function ThreePage() {
           <input type="hidden" value={3} name="count" />
           <button
             type="submit"
-            className="bg-transparent border border-white hover:bg-[#efd577] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
+            className="bg-transparent border border-white hover:bg-[#f7eacc] hover:text-[#3e6950] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
           >
             Draw Cards
           </button>

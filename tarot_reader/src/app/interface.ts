@@ -4,6 +4,7 @@ export interface TarotCard {
   upright: string;
   reversed: string;
   image: string;
+  revealed: boolean;
 }
 
 export type CardInHand = {

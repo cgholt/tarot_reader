@@ -1,18 +1,18 @@
-import { Constellation } from "@/app/interface";
+import { ConstellationRaw } from "@/app/interface";
 
-export const goblet: Constellation = {
+export const goblet: ConstellationRaw = {
   stars: [
-    [100, 100], // 0 - Top left of bowl
-    [90, 130], // 1 - Curve left
-    [100, 160], // 2 - Bottom left
-    [120, 200], // 3 - Bowl base center
-    [120, 250], // 4 - Middle of stem
-    [120, 300], // 5 - Bottom of stem
-    [90, 320], // 6 - Base left
-    [150, 320], // 7 - Base right
-    [140, 160], // 8 - Bottom right
-    [150, 130], // 9 - Curve right
-    [140, 100], // 10 - Top right of bowl
+    [10, 0], // 0 - Top left of bowl
+    [0, 30], // 1 - Curve left
+    [10, 60], // 2 - Bottom left
+    [30, 100], // 3 - Bowl base center
+    [30, 150], // 4 - Middle of stem
+    [30, 200], // 5 - Bottom of stem
+    [0, 220], // 6 - Base left
+    [60, 220], // 7 - Base right
+    [50, 60], // 8 - Bottom right
+    [60, 30], // 9 - Curve right
+    [50, 0], // 10 - Top right of bowl
   ],
   lines: [
     [0, 1],
@@ -28,13 +28,13 @@ export const goblet: Constellation = {
     [9, 10], // Right side of bowl
   ],
 };
-export const wand: Constellation = {
+export const wand: ConstellationRaw = {
   stars: [
-    [100, 800],
-    [120, 760],
-    [140, 720],
-    [160, 680],
-    [180, 640],
+    [0, 160],
+    [20, 120],
+    [40, 80],
+    [60, 40],
+    [80, 0],
   ],
   lines: [
     [0, 1],
@@ -43,15 +43,15 @@ export const wand: Constellation = {
     [3, 4],
   ],
 };
-export const sword: Constellation = {
+export const sword: ConstellationRaw = {
   stars: [
-    [1140, 800],
-    [1140, 760],
-    [1140, 720],
-    [1140, 680],
-    [1140, 640],
-    [1160, 680],
-    [1120, 680],
+    [20, 120],
+    [20, 80],
+    [20, 60],
+    [20, 40],
+    [20, 0],
+    [40, 40],
+    [0, 40],
   ],
   lines: [
     [0, 1],
@@ -62,13 +62,13 @@ export const sword: Constellation = {
   ],
 };
 
-export const pentagram: Constellation = {
+export const pentagram: ConstellationRaw = {
   stars: [
-    [1150, 190], // 0 - Top point
-    [1190, 50], // 1 - Bottom right
-    [1080, 130], // 2 - Left
-    [1220, 130], // 3 - Right
-    [1110, 50], // 4 - Bottom left
+    [70, 140], // 0 - Top point
+    [110, 0], // 1 - Bottom right
+    [0, 80], // 2 - Left
+    [140, 80], // 3 - Right
+    [30, 0], // 4 - Bottom left
   ],
   lines: [
     [0, 1],

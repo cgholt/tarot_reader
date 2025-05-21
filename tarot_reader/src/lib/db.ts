@@ -1,11 +1,13 @@
 import { Pool } from "pg";
+import dotenv from "dotenv";
+dotenv.config({ path: "../../../.env" });
 
 const pool = new Pool({
-  host: "localhost",
-  port: 5432,
-  user: "postgres",
-  password: "postgres",
-  database: "tarotdb",
+  host: process.env.POSTGRES_HOST,
+  port: Number(process.env.POSTGRES_PORT),
+  user: process.env.POSTGRES_USER,
+  password: String(process.env.POSTGRES_PASSWORD),
+  database: process.env.POSTGRES_DB,
 });
 
 export async function getAllCards() {

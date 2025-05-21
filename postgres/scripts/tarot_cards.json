@@ -1,0 +1,548 @@
+[
+  {
+    "name": "The Fool",
+    "slug": "the-fool",
+    "image": "the-fool.jpeg",
+    "upright": "Meaning of The Fool.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Magician",
+    "slug": "the-magician",
+    "image": "the-magician.jpeg",
+    "upright": "Meaning of The Magician.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The High Priestess",
+    "slug": "the-high-priestess",
+    "image": "the-high-priestess.jpeg",
+    "upright": "Meaning of The High Priestess.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Empress",
+    "slug": "the-empress",
+    "image": "the-empress.jpeg",
+    "upright": "Meaning of The Empress.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Emperor",
+    "slug": "the-emperor",
+    "image": "the-emperor.jpeg",
+    "upright": "Meaning of The Emperor.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Hierophant",
+    "slug": "the-hierophant",
+    "image": "the-hierophant.jpeg",
+    "upright": "Meaning of The Hierophant.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Lovers",
+    "slug": "the-lovers",
+    "image": "the-lovers.jpeg",
+    "upright": "Meaning of The Lovers.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Chariot",
+    "slug": "the-chariot",
+    "image": "the-chariot.jpeg",
+    "upright": "Meaning of The Chariot.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Strength",
+    "slug": "strength",
+    "image": "strength.jpeg",
+    "upright": "Meaning of Strength.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Hermit",
+    "slug": "the-hermit",
+    "image": "the-hermit.jpeg",
+    "upright": "Meaning of The Hermit.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Wheel of Fortune",
+    "slug": "wheel-of-fortune",
+    "image": "wheel-of-fortune.jpeg",
+    "upright": "Meaning of Wheel of Fortune.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Justice",
+    "slug": "justice",
+    "image": "justice.jpeg",
+    "upright": "Meaning of Justice.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Hanged Man",
+    "slug": "the-hanged-man",
+    "image": "the-hanged-man.jpeg",
+    "upright": "Meaning of The Hanged Man.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Death",
+    "slug": "death",
+    "image": "death.jpeg",
+    "upright": "Meaning of Death.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Temperance",
+    "slug": "temperance",
+    "image": "temperance.jpeg",
+    "upright": "Meaning of Temperance.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Devil",
+    "slug": "the-devil",
+    "image": "the-devil.jpeg",
+    "upright": "Meaning of The Devil.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Tower",
+    "slug": "the-tower",
+    "image": "the-tower.jpeg",
+    "upright": "Meaning of The Tower.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Star",
+    "slug": "the-star",
+    "image": "the-star.jpeg",
+    "upright": "Meaning of The Star.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Moon",
+    "slug": "the-moon",
+    "image": "the-moon.jpeg",
+    "upright": "Meaning of The Moon.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The Sun",
+    "slug": "the-sun",
+    "image": "the-sun.jpeg",
+    "upright": "Meaning of The Sun.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Judgement",
+    "slug": "judgement",
+    "image": "judgement.jpeg",
+    "upright": "Meaning of Judgement.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "The World",
+    "slug": "the-world",
+    "image": "the-world.jpeg",
+    "upright": "Meaning of The World.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ace of Wands",
+    "slug": "ace-of-wands",
+    "image": "ace-of-wands.jpeg",
+    "upright": "Meaning of Ace of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Two of Wands",
+    "slug": "two-of-wands",
+    "image": "two-of-wands.jpeg",
+    "upright": "Meaning of Two of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Three of Wands",
+    "slug": "three-of-wands",
+    "image": "three-of-wands.jpeg",
+    "upright": "Meaning of Three of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Four of Wands",
+    "slug": "four-of-wands",
+    "image": "four-of-wands.jpeg",
+    "upright": "Meaning of Four of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Five of Wands",
+    "slug": "five-of-wands",
+    "image": "five-of-wands.jpeg",
+    "upright": "Meaning of Five of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Six of Wands",
+    "slug": "six-of-wands",
+    "image": "six-of-wands.jpeg",
+    "upright": "Meaning of Six of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Seven of Wands",
+    "slug": "seven-of-wands",
+    "image": "seven-of-wands.jpeg",
+    "upright": "Meaning of Seven of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Eight of Wands",
+    "slug": "eight-of-wands",
+    "image": "eight-of-wands.jpeg",
+    "upright": "Meaning of Eight of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Nine of Wands",
+    "slug": "nine-of-wands",
+    "image": "nine-of-wands.jpeg",
+    "upright": "Meaning of Nine of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ten of Wands",
+    "slug": "ten-of-wands",
+    "image": "ten-of-wands.jpeg",
+    "upright": "Meaning of Ten of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Page of Wands",
+    "slug": "page-of-wands",
+    "image": "page-of-wands.jpeg",
+    "upright": "Meaning of Page of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Knight of Wands",
+    "slug": "knight-of-wands",
+    "image": "knight-of-wands.jpeg",
+    "upright": "Meaning of Knight of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Queen of Wands",
+    "slug": "queen-of-wands",
+    "image": "queen-of-wands.jpeg",
+    "upright": "Meaning of Queen of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "King of Wands",
+    "slug": "king-of-wands",
+    "image": "king-of-wands.jpeg",
+    "upright": "Meaning of King of Wands.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ace of Cups",
+    "slug": "ace-of-cups",
+    "image": "ace-of-cups.jpeg",
+    "upright": "Meaning of Ace of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Two of Cups",
+    "slug": "two-of-cups",
+    "image": "two-of-cups.jpeg",
+    "upright": "Meaning of Two of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Three of Cups",
+    "slug": "three-of-cups",
+    "image": "three-of-cups.jpeg",
+    "upright": "Meaning of Three of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Four of Cups",
+    "slug": "four-of-cups",
+    "image": "four-of-cups.jpeg",
+    "upright": "Meaning of Four of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Five of Cups",
+    "slug": "five-of-cups",
+    "image": "five-of-cups.jpeg",
+    "upright": "Meaning of Five of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Six of Cups",
+    "slug": "six-of-cups",
+    "image": "six-of-cups.jpeg",
+    "upright": "Meaning of Six of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Seven of Cups",
+    "slug": "seven-of-cups",
+    "image": "seven-of-cups.jpeg",
+    "upright": "Meaning of Seven of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Eight of Cups",
+    "slug": "eight-of-cups",
+    "image": "eight-of-cups.jpeg",
+    "upright": "Meaning of Eight of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Nine of Cups",
+    "slug": "nine-of-cups",
+    "image": "nine-of-cups.jpeg",
+    "upright": "Meaning of Nine of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ten of Cups",
+    "slug": "ten-of-cups",
+    "image": "ten-of-cups.jpeg",
+    "upright": "Meaning of Ten of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Page of Cups",
+    "slug": "page-of-cups",
+    "image": "page-of-cups.jpeg",
+    "upright": "Meaning of Page of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Knight of Cups",
+    "slug": "knight-of-cups",
+    "image": "knight-of-cups.jpeg",
+    "upright": "Meaning of Knight of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Queen of Cups",
+    "slug": "queen-of-cups",
+    "image": "queen-of-cups.jpeg",
+    "upright": "Meaning of Queen of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "King of Cups",
+    "slug": "king-of-cups",
+    "image": "king-of-cups.jpeg",
+    "upright": "Meaning of King of Cups.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ace of Swords",
+    "slug": "ace-of-swords",
+    "image": "ace-of-swords.jpeg",
+    "upright": "Meaning of Ace of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Two of Swords",
+    "slug": "two-of-swords",
+    "image": "two-of-swords.jpeg",
+    "upright": "Meaning of Two of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Three of Swords",
+    "slug": "three-of-swords",
+    "image": "three-of-swords.jpeg",
+    "upright": "Meaning of Three of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Four of Swords",
+    "slug": "four-of-swords",
+    "image": "four-of-swords.jpeg",
+    "upright": "Meaning of Four of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Five of Swords",
+    "slug": "five-of-swords",
+    "image": "five-of-swords.jpeg",
+    "upright": "Meaning of Five of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Six of Swords",
+    "slug": "six-of-swords",
+    "image": "six-of-swords.jpeg",
+    "upright": "Meaning of Six of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Seven of Swords",
+    "slug": "seven-of-swords",
+    "image": "seven-of-swords.jpeg",
+    "upright": "Meaning of Seven of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Eight of Swords",
+    "slug": "eight-of-swords",
+    "image": "eight-of-swords.jpeg",
+    "upright": "Meaning of Eight of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Nine of Swords",
+    "slug": "nine-of-swords",
+    "image": "nine-of-swords.jpeg",
+    "upright": "Meaning of Nine of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ten of Swords",
+    "slug": "ten-of-swords",
+    "image": "ten-of-swords.jpeg",
+    "upright": "Meaning of Ten of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Page of Swords",
+    "slug": "page-of-swords",
+    "image": "page-of-swords.jpeg",
+    "upright": "Meaning of Page of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Knight of Swords",
+    "slug": "knight-of-swords",
+    "image": "knight-of-swords.jpeg",
+    "upright": "Meaning of Knight of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Queen of Swords",
+    "slug": "queen-of-swords",
+    "image": "queen-of-swords.jpeg",
+    "upright": "Meaning of Queen of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "King of Swords",
+    "slug": "king-of-swords",
+    "image": "king-of-swords.jpeg",
+    "upright": "Meaning of King of Swords.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ace of Pentacles",
+    "slug": "ace-of-pentacles",
+    "image": "ace-of-pentacles.jpeg",
+    "upright": "Meaning of Ace of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Two of Pentacles",
+    "slug": "two-of-pentacles",
+    "image": "two-of-pentacles.jpeg",
+    "upright": "Meaning of Two of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Three of Pentacles",
+    "slug": "three-of-pentacles",
+    "image": "three-of-pentacles.jpeg",
+    "upright": "Meaning of Three of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Four of Pentacles",
+    "slug": "four-of-pentacles",
+    "image": "four-of-pentacles.jpeg",
+    "upright": "Meaning of Four of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Five of Pentacles",
+    "slug": "five-of-pentacles",
+    "image": "five-of-pentacles.jpeg",
+    "upright": "Meaning of Five of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Six of Pentacles",
+    "slug": "six-of-pentacles",
+    "image": "six-of-pentacles.jpeg",
+    "upright": "Meaning of Six of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Seven of Pentacles",
+    "slug": "seven-of-pentacles",
+    "image": "seven-of-pentacles.jpeg",
+    "upright": "Meaning of Seven of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Eight of Pentacles",
+    "slug": "eight-of-pentacles",
+    "image": "eight-of-pentacles.jpeg",
+    "upright": "Meaning of Eight of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Nine of Pentacles",
+    "slug": "nine-of-pentacles",
+    "image": "nine-of-pentacles.jpeg",
+    "upright": "Meaning of Nine of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Ten of Pentacles",
+    "slug": "ten-of-pentacles",
+    "image": "ten-of-pentacles.jpeg",
+    "upright": "Meaning of Ten of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Page of Pentacles",
+    "slug": "page-of-pentacles",
+    "image": "page-of-pentacles.jpeg",
+    "upright": "Meaning of Page of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Knight of Pentacles",
+    "slug": "knight-of-pentacles",
+    "image": "knight-of-pentacles.jpeg",
+    "upright": "Meaning of Knight of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "Queen of Pentacles",
+    "slug": "queen-of-pentacles",
+    "image": "queen-of-pentacles.jpeg",
+    "upright": "Meaning of Queen of Pentacles.",
+    "reversed": "Reversed meaning of"
+  },
+  {
+    "name": "King of Pentacles",
+    "slug": "king-of-pentacles",
+    "image": "king-of-pentacles.jpeg",
+    "upright": "Meaning of King of Pentacles.",
+    "reversed": "Reversed meaning of"
+  }
+]

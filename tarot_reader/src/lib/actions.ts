@@ -1,7 +1,7 @@
 "use server";
 
 import { CardInHand, TarotCard } from "@/app/interface";
-import { TAROT_DECK } from "@/data/tarotDeck";
+import { getAllCards } from "./db";
 
 export async function drawCards(prevState: any, formData: any) {
   // Get count
@@ -17,7 +17,8 @@ export async function drawCards(prevState: any, formData: any) {
     // console.log(array);
     return array;
   }
-
+  const TAROT_DECK = await getAllCards();
+  console.log(TAROT_DECK);
   let deck = shuffleDeck(TAROT_DECK);
 
   const drawnHand: CardInHand[] = deck

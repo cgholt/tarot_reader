@@ -1,6 +1,6 @@
 services:
   db:
-    build: ./postgres/Dockerfile
+    build: .
     container_name: tarot-postgres
     ports:
       - "5432:5432"

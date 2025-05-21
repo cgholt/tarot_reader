@@ -18,7 +18,7 @@ export type CardInHand = {
 
 export type Star = [number, number];
 export type Line = [number, number];
-export type Constellation = {
+export type ConstellationRaw = {
   stars: Star[];
   lines: Line[];
 };

@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  db:
+    build: ./postgres
+    container_name: tarot-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d
+
+  web:
+    build:
+      context: ./tarot_reader
+      dockerfile: Dockerfile.dev
+    working_dir: /tarot_reader
+    volumes:
+      - ./tarot_reader:/tarot_reader
+      - /tarot_reader/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - LLM_API_URL=http://llm:11434
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/${POSTGRES_DB}
+    depends_on:
+      - llm
+      - db
+
+  llm:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama-data:
+  pgdata:

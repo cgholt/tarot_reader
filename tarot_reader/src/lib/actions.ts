@@ -18,7 +18,7 @@ export async function drawCards(prevState: any, formData: any) {
     return array;
   }
   const TAROT_DECK = await getAllCards();
-  console.log(TAROT_DECK);
+  // console.log(TAROT_DECK);
   let deck = shuffleDeck(TAROT_DECK);
 
   const drawnHand: CardInHand[] = deck

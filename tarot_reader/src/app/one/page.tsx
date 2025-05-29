@@ -1,14 +1,16 @@
 "use client";
 
-import React, { useActionState } from "react";
+import React, { useActionState, useState } from "react";
 import { drawCards } from "@/lib/actions";
 import { TarotCard } from "../interface";
 import Image from "next/image";
 import Link from "next/link";
+import InterpretButton from "@/components/InterpretButton";
 
 export default function OnePage() {
   const initialState: any[] = [];
   const [state, formAction] = useActionState(drawCards, initialState);
+  const [interpretation, setInterpretation] = useState<string | null>(null);
 
   const cardsDisplay =
     state.length > 0 ? (
@@ -21,7 +23,6 @@ export default function OnePage() {
               width={200}
               height={345}
             ></Image>
-            <pre>{JSON.stringify(card, null, 2)}</pre>
           </li>
         ))}
       </ul>
@@ -48,12 +49,25 @@ export default function OnePage() {
           <button
             type="submit"
             className="bg-transparent border border-white hover:bg-[#f7eacc] text-white hover:text-[#3e6950] font-semibold py-2 px-4 rounded-xl transition duration-200"
+            onClick={() => {
+              setInterpretation("");
+            }}
           >
             Draw Cards
           </button>
         </form>
         <h1 className="text-3xl font-bold">Your Tarot Reading</h1>
         <div>{cardsDisplay}</div>
+        <InterpretButton
+          cards={state}
+          setParentInterpretation={setInterpretation}
+        />
+        {interpretation && (
+          <div className="mt-6 p-4 border border-white text-white">
+            <h2 className="text-xl font-semibold mb-2">Interpretation:</h2>
+            <p>{interpretation}</p>
+          </div>
+        )}
       </section>
     </>
   );

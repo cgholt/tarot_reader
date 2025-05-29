@@ -1,47 +1,19 @@
 "use client";
 import { drawCards } from "@/lib/actions";
-import { TarotCard } from "../interface";
-import Image from "next/image";
 import Link from "next/link";
-import { useActionState } from "react";
+import { useActionState, useEffect, useState } from "react";
+import ThreeCardSpread from "@/components/ThreeCardSpread";
+import InterpretButton from "@/components/InterpretButton";
 
 export default function ThreePage() {
   const initialState: any[] = [];
   const [state, formAction] = useActionState(drawCards, initialState);
+  const [interpretation, setInterpretation] = useState<string | null>(null);
 
-  const cardsDisplay =
-    state.length > 0 ? (
-      <ul className="grid gap-4 grid-flow-row md:grid-flow-col">
-        {state.map((card: TarotCard) => (
-          <li key={card.name}>
-            <Image
-              src={`/images/tarot/${card.image}`}
-              alt={card.name}
-              width={200}
-              height={345}
-            ></Image>
-            {/* <pre>{JSON.stringify(card, null, 2)}</pre> */}
-          </li>
-        ))}
-      </ul>
-    ) : (
-      <ul className="grid gap-4 grid-flow-row md:grid-flow-col">
-        {Array.from({ length: 3 }).map((_, i) => (
-          <li key={i} className="placeholder-card">
-            <Image
-              src={"/images/misc/cardBack.jpg"}
-              alt={"Card Back"}
-              width={200}
-              height={345}
-            ></Image>
-          </li>
-        ))}
-      </ul>
-    );
-
-  // useEffect(() => {
-  //   // console.log(cards);
-  // }, [cards]);
+  const cardImages =
+    state.length === 3
+      ? state.map((card) => `tarot/${card.image}`)
+      : Array(3).fill("misc/cardBack.jpg");
 
   return (
     <>
@@ -57,12 +29,25 @@ export default function ThreePage() {
           <button
             type="submit"
             className="bg-transparent border border-white hover:bg-[#f7eacc] hover:text-[#3e6950] text-white font-semibold py-2 px-4 rounded-xl transition duration-200"
+            onClick={() => {
+              setInterpretation("");
+            }}
           >
             Draw Cards
           </button>
         </form>
         <h1 className="text-3xl font-bold">Your Tarot Reading</h1>
-        <div>{cardsDisplay}</div>
+        <ThreeCardSpread cards={cardImages} width={200} height={345} />
+        <InterpretButton
+          cards={state}
+          setParentInterpretation={setInterpretation}
+        />
+        {interpretation && (
+          <div className="mt-6 p-4 border border-white text-white">
+            <h2 className="text-xl font-semibold mb-2">Interpretation:</h2>
+            <p>{interpretation}</p>
+          </div>
+        )}
       </div>
     </>
   );

@@ -10,7 +10,7 @@ export default function CrossSpread({
   width: number;
   height: number;
 }) {
-  console.log(cards);
+  // console.log(cards);
   return (
     <div className="grid grid-rows-3 grid-cols-3 gap-2 w-fit mx-auto">
       {/* Row 1 */}
@@ -20,8 +20,8 @@ export default function CrossSpread({
         <Image
           src={`/images/${cards[0]}`}
           alt="Card 1"
-          width={80}
-          height={120}
+          width={width}
+          height={height}
         />
       </div>
       <div></div>
@@ -31,24 +31,24 @@ export default function CrossSpread({
         <Image
           src={`/images/${cards[1]}`}
           alt="Card 2"
-          width={80}
-          height={120}
+          width={width}
+          height={height}
         />
       </div>
       <div className="flex justify-center items-center">
         <Image
           src={`/images/${cards[2]}`}
           alt="Card 3"
-          width={80}
-          height={120}
+          width={width}
+          height={height}
         />
       </div>
       <div className="flex justify-center items-center">
         <Image
           src={`/images/${cards[3]}`}
           alt="Card 4"
-          width={80}
-          height={120}
+          width={width}
+          height={height}
         />
       </div>
 
@@ -58,8 +58,8 @@ export default function CrossSpread({
         <Image
           src={`/images/${cards[4]}`}
           alt="Card 5"
-          width={80}
-          height={120}
+          width={width}
+          height={height}
         />
       </div>
       <div></div>

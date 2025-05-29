@@ -40,6 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# images
-*.jpeg
-*.jpg
+# # images
+# *.jpeg
+# *.jpg

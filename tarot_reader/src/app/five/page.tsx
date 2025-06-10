@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useActionState, useEffect, useState } from "react";
-import { drawCards } from "@/lib/actions";
+import { drawCards } from "@/lib/actions/draw-card-actions";
 import Link from "next/link";
 import CrossSpread from "@/components/CrossSpread";
 import InterpretButton from "@/components/InterpretButton";

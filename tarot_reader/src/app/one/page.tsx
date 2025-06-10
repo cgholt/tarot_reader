@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useActionState, useState } from "react";
-import { drawCards } from "@/lib/actions";
+import { drawCards } from "@/lib/actions/draw-card-actions";
 import { TarotCard } from "../interface";
 import Image from "next/image";
 import Link from "next/link";

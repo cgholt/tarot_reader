@@ -14,6 +14,21 @@ export async function getAllCards() {
 }
 
 export async function getCardBySlug(slug: string) {
-  const res = await pool.query("SELECT * FROM cards WHERE slug = $1", [slug]);
+  const res = await pool.query("SELECT * FROM tarot.cards WHERE slug = $1", [
+    slug,
+  ]);
   return res.rows[0];
+}
+
+export async function createUser(email: string, password: string) {
+  try {
+    const res = await pool.query(
+      "INSERT INTO tarot.users (email, password) VALUES ($1, $2)",
+      [email, password]
+    );
+  } catch (error: any) {
+    // console.log("error!: ");
+    // console.log(error.name);
+    throw error;
+  }
 }

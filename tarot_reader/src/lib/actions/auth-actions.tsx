@@ -3,6 +3,7 @@
 import { redirect } from "next/navigation";
 import { createUser } from "../db";
 import { hashUserPassword } from "../hash";
+import { signIn, signOut } from "../../../auth";
 
 type Errors = {
   email?: string;
@@ -66,3 +67,11 @@ export async function signUp(
   // store in database
   redirect("/");
 }
+
+export const login = async () => {
+  await signIn("github", { redirectTo: "/" });
+};
+
+export const logout = async () => {
+  await signOut({ redirect: false });
+};

@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-
+import { signIn, signOut, useSession } from "next-auth/react";
 export default function Navbar() {
+  const { data: session } = useSession();
+
   return (
     <nav className=" text-white px-6 py-4 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -25,12 +27,23 @@ export default function Navbar() {
           >
             Five Cards
           </Link>
-          <Link
-            href="/login"
-            className="hover:text-[#f7eacc] transition duration-150"
-          >
-            Sign up
-          </Link>
+          {session ? (
+            <Link href="/">
+              <button
+                className="hover:text-[#f7eacc] transition duration-150"
+                onClick={() => signOut()}
+              >
+                Sign out
+              </button>
+            </Link>
+          ) : (
+            <Link
+              href="/login"
+              className="hover:text-[#f7eacc] transition duration-150"
+            >
+              Sign in
+            </Link>
+          )}
         </div>
       </div>
     </nav>

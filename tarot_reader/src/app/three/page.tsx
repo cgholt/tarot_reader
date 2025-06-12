@@ -1,5 +1,5 @@
 "use client";
-import { drawCards } from "@/lib/actions";
+import { drawCards } from "@/lib/actions/draw-card-actions";
 import Link from "next/link";
 import { useActionState, useEffect, useState } from "react";
 import ThreeCardSpread from "@/components/ThreeCardSpread";

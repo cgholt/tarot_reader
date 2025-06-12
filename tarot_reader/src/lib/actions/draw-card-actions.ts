@@ -1,7 +1,7 @@
 "use server";
 
 import { CardInHand, TarotCard } from "@/app/interface";
-import { getAllCards } from "./db";
+import { getAllCards } from "../db";
 
 export async function drawCards(prevState: any, formData: any) {
   // Get count
